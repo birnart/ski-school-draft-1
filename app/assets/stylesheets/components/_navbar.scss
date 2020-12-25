@@ -23,11 +23,13 @@
   text-align: center;
  // for developemtent only!!
   background-color: white;
-  border: 1px dotted black;
 }
 
 .nav-elements:hover {
   color: black;
   text-decoration: none;
   opacity: 0.7;
+}
+.directory-toggle {
+  border-bottom: 5px solid #aa1f20;
 }
