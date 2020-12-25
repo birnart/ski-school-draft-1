@@ -1,0 +1,23 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "https://www.skilehrerjobs.at/img137/school-header-51.jpg" %>
+  <% end %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "DE", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "EN", "#", class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- obviously refractor this all later... -->
+<div class="nav-bar">
+  <%= link_to "Home", root_path, class: "nav-elements"%>
+  <%= link_to "Kurse", root_path, class: "nav-elements"%>
+  <%= link_to "Infos", root_path, class: "nav-elements"%>
+  <%= link_to "Kontakt", root_path, class: "nav-elements"%>
+</div>
