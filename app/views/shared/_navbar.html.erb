@@ -16,8 +16,24 @@
 
 <!-- obviously refractor this all later... -->
 <div class="nav-bar">
-  <%= link_to "Home", root_path, class: "nav-elements directory-toggle"%>
-  <%= link_to "Kurse", root_path, class: "nav-elements"%>
-  <%= link_to "Team", root_path, class: "nav-elements"%>
-  <%= link_to "Kontakt", root_path, class: "nav-elements"%>
+  <% if ["home"].include?(params[:action]) %>
+    <%= link_to "Home", root_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Home", root_path, class: "nav-elements"%>
+  <% end %>
+  <% if ["kurse"].include?(params[:action]) %>
+    <%= link_to "Kurse", kurse_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Kurse", kurse_path, class: "nav-elements"%>
+  <% end %>
+  <% if ["team"].include?(params[:action]) %>
+    <%= link_to "Team", team_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Team", team_path, class: "nav-elements"%>
+  <% end %>
+  <% if ["kontakt"].include?(params[:action]) %>
+    <%= link_to "Kontakt", kontakt_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Kontakt", kontakt_path, class: "nav-elements"%>
+  <% end %>
 </div>
